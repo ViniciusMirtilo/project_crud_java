@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+        <title>Restaurante da Tia Suzy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            function carregarconsultartodos() {
+                window.location = "/test_pedro/controle_produto?op=CONSULTAR TODOS";
+            }
+        </script>       
+        <style>  
+            body{
+                font-family: 'Varela Round', sans-serif;
+            }
+            h1
+           {
+           font-size: 40pt;
+           font-style: Arial;
+           color: lightskyblue;
+           text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+           }
+            table,th{
+            background-color: lightskyblue;
+            border-radius: 15px;
+            border: 2px solid lightskyblue;
+            font-style: cursive;             
+            }  
+            input{
+            background-color: white;
+            border-radius: 20px;
+            font-size: 10pt;
+            }
+            table{
+                padding-top: 10px
+            }
+        </style>
+    </head>
+    <body >       
+        <table border="2" >
+
+
+             <div align="left"> <h1>Restaurante da Tia Suzy S2</h1>
+             </div>
+                <form name="f1" action="controle_produto" method="GET">
+                    <th align="left">
+                          ID...............................................: <input type="text" name="txtid"><BR><br>
+                          NOME........................................: <input type="text" name="txtnome"><BR><br>
+                          DESCRIÇÃO............................: <input type="text" name="txtdescricao"><BR><br>
+                          PREÇO......................................: <input type="number" name="txtpreco"><BR><br>
+                          INGREDIENTES.....................: <input type="text" name="txtingredientes"><BR><br>
+                          NÍVEL DE DIFICULDADE...: <input type="text" name="txtnivel"><BR><br>
+                          CATEGORIA...........................: <input type="text" name="txtcategoria"><BR><br>
+                          TEMPO DE PREPARO..........: <input type="text" name="txttempo"><BR><br>
+                          TIPO DE REFEIÇÃO.............: <input type="text" name="txttipo"><BR><br>
+                          PESO EM GRAMAS...............: <input type="text" name="txtpeso"><BR><br>
+                          AVALIAÇÃO...........................: <input type="number" name="txtavaliacao"><BR><BR><br>
+                    </th>
+
+        </table>
+                   <br>          
+                                      
+                       <input  type="submit" name="op" value="CADASTRAR">  
+                       <input  type="submit" name="op" value="DELETAR">  
+                       <input  type="submit" name="op" value="ATUALIZAR"> 
+                       <input  type="submit" name="op" value="CONSULTAR BY ID"> 
+                       <input  type="submit" name="op" value="CONSULTAR TODOS">
+                   
+                </form>
+    </body>
+</html>
